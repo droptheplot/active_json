@@ -1,0 +1,15 @@
+{
+  "website": "Mr. Buster Muller's Blog.",
+  "posts": [
+    {
+      "id": 1,
+      "title": "Sustainable twee kinfolk cronut williamsburg franzen.",
+      "published": true
+    },
+    {
+      "id": 2,
+      "title": "Marfa skateboard synth swag.",
+      "published": false
+    }
+  ]
+}
