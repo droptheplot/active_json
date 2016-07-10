@@ -42,11 +42,15 @@ module ActiveJson
     private
 
       def database
-        @database ||= JSON.parse(
-          File.read(@config[:path]),
-          object_class: ActiveJson::Hash,
-          array_class: ActiveJson::Array
-        )
+        @database ||= begin
+          JSON.parse(
+            File.read(@config[:path]),
+            object_class: ActiveJson::Hash,
+            array_class: ActiveJson::Array
+          )
+        rescue JSON::ParserError
+          nil
+        end
       end
   end
 end
