@@ -5,6 +5,10 @@
 
 Easy JSON storage.
 
+## tl;dr
+
+Access JSON like `{ "something": "otherthing" }` by `MyDatabase.something`.
+
 ## Installation
 
 Add this line to your application's Gemfile:
