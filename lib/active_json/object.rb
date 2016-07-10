@@ -1,5 +1,5 @@
 module ActiveJson
-  class Hash < OpenStruct
+  class Object < OpenStruct
     def to_h
       super.map do |key, value|
         [

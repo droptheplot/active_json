@@ -5,11 +5,11 @@ require 'json'
 require 'ostruct'
 
 require_relative 'active_json/array'
-require_relative 'active_json/hash'
+require_relative 'active_json/object'
 require_relative 'active_json/base'
 
 module ActiveJson
-  STRUCTURES = [ActiveJson::Array, ActiveJson::Hash].freeze
+  STRUCTURES = [ActiveJson::Array, ActiveJson::Object].freeze
 
   class ReadOnlyDatabase < StandardError
     def initialize(*)

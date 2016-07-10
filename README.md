@@ -42,7 +42,7 @@ end
 
 ### JSON
 
-You can access your json as any ruby `Hash` or `Array`. For example, if your database looks like this:
+You can access your json as any ruby `Object` or `Array`. For example, if your database looks like this:
 
 ```json
 {

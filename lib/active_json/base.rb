@@ -45,7 +45,7 @@ module ActiveJson
         @database ||= begin
           JSON.parse(
             File.read(@config[:path]),
-            object_class: ActiveJson::Hash,
+            object_class: ActiveJson::Object,
             array_class: ActiveJson::Array
           )
         rescue JSON::ParserError
